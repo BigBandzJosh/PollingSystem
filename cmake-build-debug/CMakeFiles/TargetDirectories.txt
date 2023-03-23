@@ -1,0 +1,3 @@
+C:/Users/joosh/IdeaProjects/PollingSystem/cmake-build-debug/CMakeFiles/PollingSystem.dir
+C:/Users/joosh/IdeaProjects/PollingSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/joosh/IdeaProjects/PollingSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

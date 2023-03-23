@@ -1,0 +1,6 @@
+# ninja log v5
+57	129	7013002695595035	PollingSystem.exe	5b15c6228561a89c
+1	57	7013002694902753	CMakeFiles/PollingSystem.dir/main.c.obj	b5f5e516c0fccd76
+7	313	7013014418376125	build.ninja	9e7e20dc09eab20b
+2	56	7013009371391613	CMakeFiles/PollingSystem.dir/CandidateCheck.c.obj	8e1d3f82f18d33b6
+9	61	7013009371451579	CMakeFiles/PollingSystem.dir/ViewCount.c.obj	5f862a62c5147556
