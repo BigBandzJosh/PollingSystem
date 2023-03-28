@@ -9,18 +9,21 @@
 
 
 #define MAX_CANDIDATES 100
+#define MAX_NAME_LENGTH 20
+
+int action;
 
 int main() {
     num_candidates= 0;
     memset(candidates, 0, sizeof(candidates));
 
-    bool on = true;
+
 
     char role[10];
     char username[20];
     char password[20];
     start:
-    while (on) {
+    while (1) {
         printf("Enter your role (admin/user): ");
         scanf("%s", role);
 
@@ -34,14 +37,14 @@ int main() {
                 }
                 printf("Enter your password: ");
                 scanf("%s", password);
-                if (strcmp(password, "adminPassword") != 0) {
+                if (strcmp(password, "pass123") != 0) {
                     printf("Invalid password\n");
                     break;
                 }
 
                 // code to handle admin login here
                 while (1) {
-                    int action;
+
                     printf("\nAdmin actions:\n");
                     printf("1. Add candidate\n");
                     printf("2. Check vote count\n");
@@ -52,7 +55,8 @@ int main() {
 
                     switch (action) {
                         case 1: {
-                            candidateAdd((char *) candidates);
+                            char candidate_name[MAX_NAME_LENGTH];
+                            candidateAdd(candidate_name);
                             break;
                         }
                         case 2: {
@@ -64,11 +68,12 @@ int main() {
                             goto start;
                         }
                         case 4: {
-                            deleteCandidate((char *) candidates);
+                            char candidate_name[MAX_NAME_LENGTH];
+                            deleteCandidate(candidate_name);
                             break;
                         }
                     }
-                    break;
+                }
                     default:
                         printf("Enter your username: ");
                     scanf("%s", username);
@@ -76,7 +81,6 @@ int main() {
                     scanf("%s", password);
                     // code to handle user login here
                     while (1) {
-                        int action;
                         printf("\nUser actions:\n");
                         printf("1. Vote for candidate\n");
                         printf("2. Check vote count\n");
@@ -86,10 +90,10 @@ int main() {
 
                         switch (action) {
                             case 1: {
-                                char candidate_name[20];
+                                char candidate_name[MAX_NAME_LENGTH];
                                 printf("Enter candidate name: ");
                                 scanf("%s", candidate_name);
-                                userVote((char **) candidate_name, num_candidates, candidates);
+                                userVote(candidate_name);
                                 break;
                             }
                             case 2:
@@ -106,7 +110,4 @@ int main() {
                     }
                 }
         }
-
     }
-    return 0;
-}

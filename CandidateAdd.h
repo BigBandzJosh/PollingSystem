@@ -8,7 +8,7 @@
 #define MAX_CANDIDATES 100
 
 
-int candidateAdd(char candidate_name[]);
+int candidateAdd(char *candidate_name);
 
 #endif /* CANDIDATE_CHECK_H */
 

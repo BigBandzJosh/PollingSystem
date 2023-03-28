@@ -7,6 +7,6 @@
 
 #define MAX_CANDIDATES 100
 
-int userVote(char *candidate_name[], int num_candidates, struct Candidate candidates[MAX_CANDIDATES]);
+int userVote(char *candidate_name);
 
 #endif //POLLINGSYSTEM_USERVOTE_H

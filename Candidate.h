@@ -6,6 +6,8 @@
 #define POLLINGSYSTEM_CANDIDATE_H
 
 #define MAX_CANDIDATES 100
+#define MAX_NAME_LENGTH 20
+
 
 struct Candidate {
     char name[20];

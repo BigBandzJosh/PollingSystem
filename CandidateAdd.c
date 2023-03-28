@@ -10,18 +10,18 @@ int num_candidates = 0;
 struct Candidate candidates[MAX_CANDIDATES];
 
 
-int candidateAdd(char candidate_name[]) {
+int candidateAdd(char *candidate_name) {
     printf("Enter candidate name: ");
     scanf("%s", candidate_name);
 
     // Check if candidate already exists
     int candidate_index = -1;
     for (int i = 0; i < num_candidates; i++) {
-        if (strcmp(candidates[num_candidates].name, candidates[i].name) == 0) {
+        if (strcmp(candidates[i].name, candidate_name) == 0) {
             candidate_index = i;
             break;
         }
-}
+    }
     if (candidate_index == -1){
         candidates[num_candidates].votes = 0;
         strcpy(candidates[num_candidates].name, candidate_name);

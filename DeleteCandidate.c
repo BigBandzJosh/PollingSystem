@@ -6,7 +6,7 @@
 #include "stdio.h"
 #include "string.h"
 
-int deleteCandidate(char candidate_name[]) {
+int deleteCandidate(char *candidate_name) {
     printf("Enter candidate name: ");
     scanf("%s", candidate_name);
 

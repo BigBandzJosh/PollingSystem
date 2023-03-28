@@ -11,7 +11,6 @@ int viewCount() {
     for (int i = 0; i < num_candidates; i++) {
         printf("%s: %d votes\n", candidates[i].name, candidates[i].votes);
     }
-    printf("\n");
 }
 
 
