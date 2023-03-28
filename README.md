@@ -1,6 +1,7 @@
 # PollingSystem
 
 Step 1: Login as Admin 
+
 UserName: admin
 Password: pass123
 
