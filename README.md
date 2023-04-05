@@ -6,12 +6,12 @@ The Voting System is a program designed to handle a voting system. It allows bot
 
 # Functionality:
 
-Admin Login: An admin can login to the system using the username "admin" and password "pass123".
-Candidate Add: Once logged in as an admin, a candidate can be added to the system by entering their name.
-View Count: Admins can check the current vote count for each candidate in the system.
-Delete Candidate: An admin can delete a candidate from the system.
-User Login: A user can login to the system by entering their username and password.
-User Vote: Once logged in as a user, they can vote for a candidate by entering the candidate's name.
+Admin Login: An admin can login to the system using the username "admin" and password "pass123".<br>
+Candidate Add: Once logged in as an admin, a candidate can be added to the system by entering their name.<br>
+View Count: Admins can check the current vote count for each candidate in the system.<br>
+Delete Candidate: An admin can delete a candidate from the system.<br>
+User Login: A user can login to the system by entering their username and password.<br>
+User Vote: Once logged in as a user, they can vote for a candidate by entering the candidate's name.<br>
 View Count: Users can check the current vote count for each candidate in the system.
 
 # Modules Used:
